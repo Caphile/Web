@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><title>사이버 영화관: 회원가입</title></head>
+<style>
+    html, body {margin:0; padding:0; height:100%;}
+    #divStyle {
+        position:absolute;
+        height:200px;
+        width:300px;
+        top:30%;
+        left:50%;
+        transform:translateX(-50%);
+        padding:10px;
+        border:1px solid black;
+        background-color:white;
+        opacity:0.95;
+    }
+    h3 {text-align:center;}   
+</style>
+<script>
+function btn(){
+    var inputID=document.getElementById('ID').value;
+    var inputPW=document.getElementById('PW').value;
+
+    if(inputID==''){
+        alert('아이디를 입력하세요.');
+    }
+    else if(inputPW==''){
+        alert('비밀번호를 입력하세요.')
+    }
+    else {
+        localStorage.setItem(document.getElementById('ID').value, document.getElementById('PW').value);
+
+        alert('가입되었습니다.');
+        window.location.href='index.html';
+    }
+}
+</script>
+</head>
+<body style=background-image:url(background/entry.jpg);background-size:cover>
+<div id='divStyle'>
+<h3>회원가입</h3>
+<hr>
+    <table border=0 align=center>
+        <tr>
+            <td>아이디</td> 
+            <td><input type=text id='ID' name='id' value='' style=width:120px></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td><input type=password id='PW' name='pw' value='' style=width:120px></td>
+            <td><button onclick='javascript:btn()'>가입</button></td>
+        </tr>
+        <tr>
+            <td><p><a href='index.html' style='font-size:11pt;text-decoration:underline'>돌아가기</a></td>
+        </tr>
+	</table>
+</body>
+</html>

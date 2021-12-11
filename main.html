@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><title>사이버 영화관: 로비</title></head>
+<style>
+    #Style {
+        background-color:white;
+        opacity:0.95;
+    }
+</style>
+<script>
+function play(){
+    window.location.href='watch.html'
+}
+
+</script>
+</head>
+<body style=background-image:url(background/entry.jpg);background-size:cover>
+<div>
+    <div style=float:right;>
+        <table border=0>
+        <tr>
+            <td><p><a href='index.html' style=font-size:11pt><b>로그아웃</b></a></td>
+        </tr>            
+        </table>
+    </div>
+    <div style=text-align:center;font-size:45pt;color:white><b>현재상영작</b></div>
+    <div style=clear:both></div>
+</div>
+
+<div style=padding:50px>
+    <table id='Style' border=2 align=center rules=rows>
+    <tr>
+        <td><img src='movies/Spider-Man.jpg' style=width:150px;height:200px;></td>
+        <div>
+            <td style=padding:30px><b>스파이더맨: 노 웨이 홈</b>
+            <p><a href='https://movie.naver.com/movie/bi/mi/basic.naver?code=208077' target='_blank' style='font-size:11pt;text-decoration:underline'>영화정보</a></td>
+        </div>
+        <td style=padding:20px><button onclick=window.location.href='watch01.html'>시청하기</button></td>
+
+        <td><img src='movies/Log in Belgium.jpg' style=width:150px;height:200px;></td>
+        <div>
+            <td style=padding:30px><b>로그 인 벨지움</b>
+            <p><a href='https://movie.naver.com/movie/bi/mi/basic.naver?code=208462' target='_blank' style='font-size:11pt;text-decoration:underline'>영화정보</a></td>
+        </div>
+        <td style=padding:20px><button onclick=window.location.href='watch02.html'>시청하기</button></td>
+    </tr>
+    <tr>
+        <td><img src='movies/Dune.jpg' style=width:150px;height:200px;></td>
+        <div>
+            <td style=padding:30px><b>듄</b>
+            <p><a href='https://movie.naver.com/movie/bi/mi/basic.naver?code=191559' target='_blank' style='font-size:11pt;text-decoration:underline'>영화정보</a></td>
+        </div>
+        <td style=padding:20px><button onclick=window.location.href='watch03.html'>시청하기</button></td>
+
+        <td><img src='movies/Encanto.jpg' style=width:150px;height:200px;></td>
+        <div>
+            <td style=padding:30px><b>엔칸토: 마법의 세계</b>
+            <p><a href='https://movie.naver.com/movie/bi/mi/basic.naver?code=210282' target='_blank' style='font-size:11pt;text-decoration:underline'>영화정보</a></td>
+        </div>
+        <td style=padding:20px><button onclick=window.location.href='watch04.html'>시청하기</button></td>
+    </tr>
+    <tr>
+        <td><img src='movies/I Am From Chosun.jpg' style=width:150px;height:200px;></td>
+        <div>
+            <td style=padding:30px><b>나는 조선사람입니다</b>
+            <p><a href='https://movie.naver.com/movie/bi/mi/basic.naver?code=197063' target='_blank' style='font-size:11pt;text-decoration:underline'>영화정보</a></td>
+        </div>
+        <td style=padding:20px><button onclick=window.location.href='watch05.html'>시청하기</button></td>
+    </tr>
+    </table>
+</div>
+</body>
+</html>
